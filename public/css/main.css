@@ -10,41 +10,90 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, .4);
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 10;
+}
+
+nav a#home {
+  display: inline-block;
+  width: 70px;
+  height: 100%;
+  background: transparent url(../img/startup-talks-logo.png) center center no-repeat;
+  background-size: contain;
+}
+
+nav ul {
+  display: inline-block;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}
+
+nav ul li a, nav a.mobile-menu {
+  display: block;
+  color: #fff;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover, nav a.mobile-menu {
+  text-decoration: none;
+  color: #fff;
+  border-bottom-color: aqua;
+}
+
+nav ul li.active a {
+  border-bottom: 2px solid aqua;
+}
+
+header.page-home {
   background: transparent url("../img/background.png") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
 }
 
-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 0;
-}
-
-nav button {
-  float: right;
-  margin: 0 10px;
-  background-color: rgba(255, 255, 255, .1);
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  padding: 7px 10px;
-}
-
-nav button:hover {
-  color: #000;
-  background-color: rgba(255,255,255,.8);
-}
-
-header {
+.cover, .cover-half, .cover-third {
+  position: relative;
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.cover-half {
+  height: 50%;
+}
+
+.cover-third {
+  height: 34%;
+}
+
+.screen {
   background-color: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 

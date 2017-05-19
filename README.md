@@ -1,3 +1,1 @@
-# aaronisthename
-
-> Thoughts of a Tech Journeyman
+# Startup Talks

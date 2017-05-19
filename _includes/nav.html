@@ -1,0 +1,10 @@
+<nav>
+  <a href="/" id="home"></a>
+  <a href="#" class="visible-xs mobile-menu">Menu</a>
+  <ul class="hidden-xs">
+  {% for link in site.data.navigation %}
+    <li {% if page.url == link.url %}class="active"{% endif %}>
+     <a href="{{link.route}}">{{link.text}}</a></li>
+  {% endfor %}
+  </ul>
+</nav>
