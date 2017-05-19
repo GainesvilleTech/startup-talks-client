@@ -11,8 +11,8 @@
   <meta name="author" content="@aaronbdixon">
 
   <!--<link rel="icon" href="/public/img/favicon.png">-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-  <!-- https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css -->
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" />
   <link rel="stylesheet" href="public/css/main.css" />
 
   <!--[if lt IE 9]>
@@ -32,6 +32,22 @@
     <!--<div class="addthis_inline_follow_toolbox"></div>-->
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js" charset="utf-8"></script>
+  <script charset="utf-8">
+    $(document).ready(function() {
+      $("nav li.mobile a").click(function(e) {
+        e.preventDefault();
+
+        var parent = $(this).parent();
+        var label = parent.hasClass("close") ? "Menu" : "Close";
+
+        $(this).text(label);
+        parent.toggleClass("close");
+        $("nav li.full").toggle();
+      });
+    });
+  </script>
   <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58ed2855d58ac83f"></script>-->
 </body>
 </html>

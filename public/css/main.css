@@ -37,15 +37,36 @@ nav a#home {
 
 nav ul {
   display: inline-block;
-  float: right;
+  position: relative;
+  align-self: center;
+  padding: 0;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0 0 0 10px;
+  list-style: none;
 }
 
-nav ul li a, nav a.mobile-menu {
+nav ul li.mobile {
+  display: inline-block;
+}
+
+nav ul li.mobile.close {
+  position: inherit;
+  z-index: 1;
+}
+
+nav ul li.full {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .9);
+  padding: 10px 15px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav ul li a {
   display: block;
   color: #fff;
   height: 30px;
@@ -57,7 +78,7 @@ nav ul li a, nav a.mobile-menu {
   border-bottom: 2px solid transparent;
 }
 
-nav ul li a:hover, nav a.mobile-menu {
+nav ul li a:hover {
   text-decoration: none;
   color: #fff;
   border-bottom-color: aqua;
@@ -111,12 +132,6 @@ header.page-home {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  #cta {
-      width: 50%;
-  }
-}
-
 footer {
   position: absolute;
   bottom: 0;
@@ -126,4 +141,34 @@ footer {
 
 footer .addthis_inline_follow_toolbox {
   display: inline-block;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    position: initial;
+  }
+
+  nav ul li.mobile {
+    display: none;
+  }
+
+  nav ul li.full {
+    display: inline-block;
+    background-color: transparent;
+    position: initial;
+    padding: 0;
+    top: initial;
+    left: initial;
+    width: initial;
+    height: initial;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0 0 0 10px;
+  }
+
+  #cta {
+      width: 50%;
+  }
 }
