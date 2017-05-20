@@ -1,15 +1,13 @@
 <nav>
   <a href="/" id="home"></a>
-  <ul>
-    <li class="mobile"><a href="#">Menu</a></li>
-    <li class="full">
-      <ul>
-      {% for link in site.data.navigation %}
-      <li {% if page.url == link.url %}class="active"{% endif %}>
-        <a href="{{link.route}}">{{link.text}}</a>
-      </li>
-      {% endfor %}
-      </ul>
+  <div class="hamburger-menu">
+    <div></div>
+  </div>
+  <ul class="menu">
+    {% for link in site.data.navigation %}
+    <li {% if page.url == link.url %}class="active"{% endif %}>
+      <a href="{{link.route}}">{{link.text}}</a>
     </li>
+    {% endfor %}
   </ul>
 </nav>

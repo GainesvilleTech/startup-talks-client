@@ -49,15 +49,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js" charset="utf-8"></script>
   <script charset="utf-8">
     $(document).ready(function() {
-      $("nav li.mobile a").click(function(e) {
-        e.preventDefault();
-
-        var parent = $(this).parent();
-        var label = parent.hasClass("close") ? "Menu" : "Close";
-
-        $(this).text(label);
-        parent.toggleClass("close");
-        $("nav li.full").toggle();
+      $(".hamburger-menu").click(function(e) {
+        $("nav ul.menu").toggle();
+        $(this).toggleClass("active");
       });
 
       $('.event .card')
