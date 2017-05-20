@@ -4,6 +4,12 @@
 - text: Speakers
   route: /speakers
   url: /speakers.html
+- text: Episodes
+  route: /episodes
+  url: /episodes.html
+- text: Articles
+  route: /articles
+  url: /articles.html
 - text: About
   route: about
   url: /about.html
