@@ -107,7 +107,7 @@ header.page-home section {
   z-index: 1;
 }
 
-header.page-home section .tags a {
+.tags a {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
@@ -131,6 +131,41 @@ header.page-home section p {
 
 header.page-home button.play-button {
   display: none;
+}
+
+#latest-content {
+  padding: 20px;
+}
+
+#latest-content .card {
+  width: 100%;
+  border-radius: 0;
+}
+
+#latest-content .ui.card>:first-child {
+  border-radius: 0 !important;
+}
+
+#latest-content .column {
+  margin-bottom: 50px;
+}
+
+#latest-content .tags a {
+  font-size: 1.2rem;
+}
+
+#latest-content .card .tags {
+  margin-bottom: 20px;
+}
+
+#latest-content .card .tags a {
+  font-size: 1rem;
+  color: #000
+}
+
+#latest-content .ui.card>.content>.header:not(.ui) {
+  font-weight: bold;
+  font-size: 1.8em;
 }
 
 .cover, .cover-half, .cover-third {
@@ -204,10 +239,6 @@ footer .addthis_inline_follow_toolbox {
     max-width: 50rem;
   }
 
-  header.page-home section .tags a {
-    font-size: 1.2rem;
-  }
-
   header.page-home section h2 {
     font-size: 7rem;
   }
@@ -236,5 +267,9 @@ footer .addthis_inline_follow_toolbox {
 
   header.page-home button.play-button i.thin.circle {
     opacity: .4;
+  }
+
+  #latest-content {
+    padding: 100px;
   }
 }

@@ -33,7 +33,7 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53FRWC6"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  
+
   {% include nav.html %}
 
   {{content}}
@@ -59,6 +59,11 @@
         parent.toggleClass("close");
         $("nav li.full").toggle();
       });
+
+      $('.event .card')
+        .dimmer({
+          on: 'hover'
+        });
     });
   </script>
   <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58ed2855d58ac83f"></script>-->
