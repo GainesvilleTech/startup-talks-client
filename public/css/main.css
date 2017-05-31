@@ -119,6 +119,7 @@ header.page-home button.play-button {
 #latest-content .card {
   width: 100%;
   border-radius: 0;
+  height: 100%;
 }
 
 #latest-content .ui.card>:first-child {
@@ -173,7 +174,7 @@ header.page-home button.play-button {
 footer {
   width: 100vw;
   height: 50vh;
-  background-color: aqua;
+  background-color: black;
 }
 
 footer .addthis_inline_follow_toolbox {

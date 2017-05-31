@@ -54,15 +54,15 @@
         $(this).toggleClass("active");
       });
 
-      $(".card").dimmer({
+      $(".card .image").dimmer({
         on: 'hover'
       });
 
       // TODO: DEBOUNCE THIS PLEASE!
       $("body").visibility({
-        once       : false,
-        continuous : true,
-        onTopPassed  : function(calculations) {
+        once: false,
+        continuous: true,
+        onTopPassed: function(calculations) {
           var newColor = 'rgba(0, 0, 0, ' + (calculations.percentagePassed || calculations.topVisible ? calculations.percentagePassed * .9 : .9) +')';
           $("nav").css('background-color', newColor);
         }
