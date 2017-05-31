@@ -14,7 +14,13 @@
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-  <link rel="stylesheet" href="/public/css/main.css" />
+  <link rel="stylesheet" href="/public/css/styles.css" />
+
+  {% if page.custom_css %}
+    {% for css in page.css %}
+      <link rel="stylesheet" href="{{ css }}" media="screen" type="text/css">
+    {% endfor %}
+  {% endif %}
 
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -49,17 +55,19 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js" charset="utf-8"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+  {% if page.js %}
+    {% for js in page.js %}
+    <script src='{{ js }}' type="text/javascript"></script>
+    {% endfor %}
+  {% endif %}
+
+
   <script charset="utf-8">
     $(document).ready(function() {
       $(".hamburger-menu").click(function(e) {
         $("nav ul.menu").toggle();
         $(this).toggleClass("active");
-      });
-
-      $(".carousel").slick({
-        prevArrow: $(".prev"),
-        nextArrow: $(".next")
       });
 
       // TODO: DEBOUNCE THIS PLEASE!

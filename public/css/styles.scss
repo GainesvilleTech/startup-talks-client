@@ -1,0 +1,383 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "variables";
+
+@import "typography";
+@import "speakers";
+
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  z-index: 10;
+
+  a#home {
+    display: inline-block;
+    width: 70px;
+    height: 100%;
+    background: transparent url(../img/startup-talks-logo.png) center center no-repeat;
+    background-size: contain;
+  }
+
+  ul {
+    &.menu {
+      display: none;
+      position: fixed;
+      background-color: rgba(0, 0, 0, .9);
+      padding: 90px 15px 0 15px;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+
+      li {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+        &.active a {
+          border-bottom: 2px solid aqua;
+        }
+
+        a {
+          display: block;
+          color: #fff;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 10px;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: bold;
+          border-bottom: 2px solid transparent;
+          width: 40%;
+          align-self: flex-end;
+
+          &:hover {
+            text-decoration: none;
+            color: #fff;
+            border-bottom-color: aqua;
+          }
+        }
+      }
+    }
+  }
+}
+
+header {
+  &.home {
+    background: transparent url("../img/background.png") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    section {
+      padding: 30px;
+      z-index: 1;
+
+      @media (min-width: $screen-tablet) {
+        padding: 0;
+        z-index: 1;
+        position: absolute;
+        left: 4rem;
+        max-width: 50rem;
+      }
+
+      h2 {
+        color: #fff;
+        font-size: 4rem;
+
+        @media (min-width: $screen-tablet) {
+          font-size: 7rem;
+        }
+      }
+
+      h3 {
+        color: rgba(255, 255, 255, .6);
+        font-size: 1.5rem;
+
+        @media (min-width: $screen-tablet) {
+          font-size: 2.5rem;
+        }
+      }
+
+      p {
+        color: rgba(255, 255, 255, .6);
+        font-size: 1rem;
+
+        @media (min-width: $screen-tablet) {
+          color: rgba(255, 255, 255, .6);
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    button {
+      &.play {
+        display: none;
+
+        @media (min-width: $screen-lg-desktop) {
+          display: none; //flex;
+          border: 0;
+          background-color: transparent;
+          padding: 0;
+          margin: 0;
+          align-self: center;
+
+          i {
+            &.circle {
+              opacity: .2;
+
+              &.thin {
+                opacity: .4;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tags a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 3px solid aqua;
+}
+
+#latest-content {
+  padding: 20px 0;
+
+  @media (min-width: $screen-tablet) {
+    padding: 100px 100px 50px 100px;
+  }
+
+  #view-all {
+    h2 {
+      font-size: 4.5em;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-size: 2.5em;
+      text-transform: uppercase;
+    }
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+
+    .tags {
+      margin-bottom: 20px;
+
+      a {
+        font-size: 1.2rem;
+        color: #000
+      }
+    }
+  }
+
+  .ui.card>:first-child {
+    border-radius: 0 !important;
+  }
+
+  .ui.card>.content>.header:not(.ui) {
+    font-weight: bold;
+    font-size: 1.8em;
+  }
+
+  .column {
+    margin-bottom: 50px;
+  }
+
+  .tags {
+
+  }
+}
+
+.cover {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  &.threequarters {
+    height: 75%;
+  }
+
+  &.twothirds {
+    height: 67%;
+  }
+
+  &.half {
+    height: 50%;
+  }
+
+  &.third {
+    height: 34%;
+  }
+}
+
+.screen {
+  background-color: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+footer {
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
+
+  .addthis_inline_follow_toolbox {
+    display: inline-block;
+  }
+}
+
+.hamburger-menu {
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: .5em 1em;
+  border-radius: 0 0.12em 0.12em 0;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: inherit;
+      transition: all 0.4s ease;
+    }
+
+    &:after {
+      top: 10px;
+    }
+  }
+
+  &.active {
+    > div {
+      transform: rotate(135deg);
+
+      &:before, &:after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+
+      &:active {
+        opacity: 0;
+      }
+    }
+
+    &:hover {
+      > div {
+        transform: rotate(225deg);
+      }
+    }
+  }
+}
+
+header {
+  &.speaker {
+    background: #222;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    font-weight: bold;
+
+    @media (max-width: $screen-phone-max) {
+      height: initial !important;
+    }
+
+    .video {
+      width: 100%;
+      max-width: 767px;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 50px rgba(0, 0, 0, .7);
+    }
+  }
+}
+
+.qanda {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+
+  .question {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1;
+
+    @media (min-width: $screen-phone) {
+      font-size: 4em;
+    }
+  }
+
+  .answer {
+    font-size: 1.2em;
+
+    @media (min-width: $screen-phone) {
+      font-size: 2em;
+    }
+  }
+}

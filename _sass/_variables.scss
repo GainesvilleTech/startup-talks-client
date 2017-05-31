@@ -1,0 +1,8 @@
+$screen-phone: 480px !default;
+$screen-tablet: 768px !default;
+$screen-desktop: 992px !default;
+$screen-lg-desktop: 1200px !default;
+
+$screen-phone-max: ($screen-tablet - 1) !default;
+$screen-tablet-max: ($screen-desktop - 1) !default;
+$screen-desktop-max: ($screen-lg-desktop - 1) !default;
