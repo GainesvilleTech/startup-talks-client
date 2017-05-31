@@ -203,8 +203,14 @@ footer .addthis_inline_follow_toolbox {
     font-size: 1.5rem;
   }
 
+  #latest-content {
+    padding: 100px 100px 50px 100px;
+  }
+}
+
+@media (min-width: 576px) {
   header.page-home button.play-button {
-    display: block;
+    display: none;
     border: 0;
     background-color: transparent;
     padding: 0;
@@ -218,10 +224,6 @@ footer .addthis_inline_follow_toolbox {
 
   header.page-home button.play-button i.thin.circle {
     opacity: .4;
-  }
-
-  #latest-content {
-    padding: 100px 100px 50px 100px;
   }
 }
 
