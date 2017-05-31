@@ -3,6 +3,7 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 body {
@@ -25,16 +26,16 @@ nav {
   z-index: 10;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
 nav a#home {
   display: inline-block;
   width: 70px;
   height: 100%;
   background: transparent url(../img/startup-talks-logo.png) center center no-repeat;
   background-size: contain;
-}
-
-nav ul li {
-  list-style: none;
 }
 
 nav ul.menu {
@@ -49,6 +50,12 @@ nav ul.menu {
   margin: 0;
 }
 
+nav ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
 nav ul li a {
   display: block;
   color: #fff;
@@ -59,6 +66,8 @@ nav ul li a {
   font-size: 13px;
   font-weight: bold;
   border-bottom: 2px solid transparent;
+  width: 40%;
+  align-self: flex-end;
 }
 
 nav ul li a:hover {
@@ -116,6 +125,17 @@ header.page-home button.play-button {
   padding: 20px 0;
 }
 
+#latest-content #view-all h2 {
+  font-size: 4.5em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#latest-content #view-all h3 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
 #latest-content .card {
   width: 100%;
   border-radius: 0;
@@ -148,7 +168,7 @@ header.page-home button.play-button {
   font-size: 1.8em;
 }
 
-.cover, .cover-half, .cover-third {
+.cover {
   position: relative;
   height: 100%;
   width: 100%;
@@ -156,11 +176,19 @@ header.page-home button.play-button {
   padding: 0;
 }
 
-.cover-half {
+.cover.threequarters {
+  height: 75%;
+}
+
+.cover.twothirds {
+  height: 67%;
+}
+
+.cover.half {
   height: 50%;
 }
 
-.cover-third {
+.cover.third {
   height: 34%;
 }
 
@@ -286,4 +314,33 @@ footer .addthis_inline_follow_toolbox {
 
 .hamburger-menu > div:after {
   top: 10px;
+}
+
+header.speaker {
+  background: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5em;
+  font-weight: bold;
+}
+
+.qanda {
+  padding: 20px;
+}
+
+.qanda .question {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1
+}
+
+header.speaker .video {
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .7);
 }

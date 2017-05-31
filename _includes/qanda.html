@@ -1,0 +1,18 @@
+<section class="content qanda">
+  <h2>Q&amp;A</h2>
+
+  <div class="carousel">
+  {% for question in site.data.qanda[page.speaker] %}
+  <div class="slide">
+    <div class="question">
+      {{question.question}}
+    </div>
+    <div class="answer">
+      {{question.answer}}
+    </div>
+  </div>
+  {% endfor %}
+  </div>
+  <i class="prev big arrow circle left icon"></i>
+  <i class="next big arrow circle right icon"></i>
+</section>
