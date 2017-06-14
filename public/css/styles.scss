@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main {
-  min-height: calc(100% - 65px);
+  min-height: calc(100% - 49px);
   width: 100%;
   margin: 0;
   padding: 0;
@@ -103,11 +103,13 @@ header {
   &.home {
     background: transparent url("../img/rick-carlson-background.jpg") no-repeat center center fixed;
     background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: $screen-tablet) {
+      justify-content: flex-start;
+    }
 
     section {
       padding: 30px;
@@ -116,9 +118,8 @@ header {
       @media (min-width: $screen-tablet) {
         padding: 0;
         z-index: 1;
-        position: absolute;
-        left: 4rem;
-        max-width: 50rem;
+        max-width: 50%;
+        margin-left: 10%;
       }
 
       h2 {
@@ -190,7 +191,8 @@ header {
   padding: 20px 0;
 
   @media (min-width: $screen-tablet) {
-    padding: 100px 100px 50px 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
   }
 
   #view-all {
@@ -282,6 +284,8 @@ header {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
 
   &.twothirds {
     opacity: .67;
@@ -397,6 +401,12 @@ header {
     @media (max-width: $screen-phone-max) {
       height: initial !important;
       display: block;
+
+      &.text {
+        height: 25vh !important;
+        display: flex;
+        font-size: 2em;
+      }
     }
 
     .video {
