@@ -99,92 +99,16 @@ nav {
   }
 }
 
-header {
-  &.home {
-    background: transparent url("../img/rick-carlson-background.jpg") no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.tags {
+  margin-bottom: 15px;
 
-    @media (min-width: $screen-tablet) {
-      justify-content: flex-start;
-    }
-
-    section {
-      padding: 30px;
-      z-index: 1;
-
-      @media (min-width: $screen-tablet) {
-        padding: 0;
-        z-index: 1;
-        max-width: 50%;
-        margin-left: 10%;
-      }
-
-      h2 {
-        color: #fff;
-        font-size: 4rem;
-
-        @media (min-width: $screen-tablet) {
-          font-size: 7rem;
-        }
-      }
-
-      h3 {
-        color: rgba(255, 255, 255, .6);
-        font-size: 1.5rem;
-        margin-bottom: 0;
-
-        @media (min-width: $screen-tablet) {
-          font-size: 2.5rem;
-        }
-      }
-
-      p {
-        color: rgba(255, 255, 255, .6);
-        font-size: 1rem;
-
-        @media (min-width: $screen-tablet) {
-          color: rgba(255, 255, 255, .6);
-          font-size: 1.5rem;
-        }
-      }
-    }
-
-    button {
-      &.play {
-        display: none;
-
-        @media (min-width: $screen-lg-desktop) {
-          display: none; //flex;
-          border: 0;
-          background-color: transparent;
-          padding: 0;
-          margin: 0;
-          align-self: center;
-
-          i {
-            &.circle {
-              opacity: .2;
-
-              &.thin {
-                opacity: .4;
-              }
-            }
-          }
-        }
-      }
-    }
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 3px solid aqua;
+    margin-right: 10px;
   }
-}
-
-.tags a {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  border-bottom: 3px solid aqua;
-  margin-right: 10px;
 }
 
 #latest-content {
@@ -380,6 +304,85 @@ footer {
 }
 
 header {
+  &.home {
+    background: transparent url("../img/rick-carlson-background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: $screen-tablet) {
+      justify-content: flex-start;
+    }
+
+    section {
+      padding: 30px;
+      z-index: 1;
+
+      @media (min-width: $screen-tablet) {
+        padding: 0;
+        z-index: 1;
+        max-width: 50%;
+        margin-left: 10%;
+      }
+
+      h2 {
+        color: #fff;
+        font-size: 4rem;
+        line-height: 1;
+
+        @media (min-width: $screen-tablet) {
+          font-size: 7rem;
+        }
+      }
+
+      h3 {
+        color: rgba(255, 255, 255, .6);
+        font-size: 1.5rem;
+        margin-bottom: 0;
+
+        @media (min-width: $screen-tablet) {
+          font-size: 2.5rem;
+        }
+      }
+
+      p {
+        color: rgba(255, 255, 255, .6);
+        font-size: 1rem;
+
+        @media (min-width: $screen-tablet) {
+          color: rgba(255, 255, 255, .6);
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    button {
+      &.play {
+        display: none;
+
+        @media (min-width: $screen-lg-desktop) {
+          display: none; //flex;
+          border: 0;
+          background-color: transparent;
+          padding: 0;
+          margin: 0;
+          align-self: center;
+
+          i {
+            &.circle {
+              opacity: .2;
+
+              &.thin {
+                opacity: .4;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   &.speaker {
     background-color: #222;
     color: white;
