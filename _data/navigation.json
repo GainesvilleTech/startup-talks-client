@@ -1,0 +1,14 @@
+{
+  "elements": [
+    {
+      "text": "Home",
+      "route": "/",
+      "url": "/"
+    },
+    {
+      "text": "Speakers",
+      "route": "/speakers/",
+      "url": "/speakers/"
+    }
+  ]
+}

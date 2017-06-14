@@ -1,10 +1,12 @@
 <nav>
   <a href="/" id="home"></a>
+  
   <div class="hamburger-menu">
     <div></div>
   </div>
+
   <ul class="menu">
-    {% for link in site.data.navigation %}
+    {% for link in site.data.navigation.elements %}
     <li {% if page.url == link.url %}class="active"{% endif %}>
       <a href="{{link.route}}">{{link.text}}</a>
     </li>
