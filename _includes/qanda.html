@@ -1,19 +1,26 @@
-<section class="ui grid container qanda">
-  <div class="column">
-  <h2>Q&amp;A</h2>
-
-  <div class="carousel">
-  {% for question in site.data.qanda[page.speaker] %}
-  <div class="slide">
-    <div class="question">
-      {{question.question}}
+<section class="qanda">
+  <div class="ui grid container">
+    <div class="one column row">
+      <div class="column">
+        <h2>Q&amp;A</h2>
+      </div>
     </div>
-    <div class="answer">
-      {{question.answer}}
+    <div class="one column row">
+      <div class="column carousel">
+      {% for question in site.data.qanda[page.speaker] %}
+      <div class="slide">
+        <div class="question">
+          {{question.question}}
+        </div>
+        <div class="answer">
+          {{question.answer}}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="one column row">
+      <i class="prev big arrow circle left icon"></i>
+      <i class="next big arrow circle right icon"></i>
     </div>
   </div>
-  {% endfor %}
-  </div>
-  <i class="prev big arrow circle left icon"></i>
-  <i class="next big arrow circle right icon"></i></div>
 </section>
