@@ -2,12 +2,34 @@
 speaker: rickcarlson
 tags: marketing technology
 js:
-  - //cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js
-  - /public/js/speakers.js
+  - //js.tito.io/v1
+css:
+  - https://css.tito.io/v1.1
 ---
 
-<header class="cover quarter speaker">
+<header class="cover quarter speaker text">
   Rick Carlson
 </header>
 
-{% include qanda.html %}
+<section id="bio">
+  <div class="ui container">
+    <h2>Bio</h2>
+
+    <p>
+      Rick is a founder and CEO of SharpSpring. He started with the goal of bringing
+      marketing analytics and automation tools to small and medium businesses on an
+      affordable and easy-to-use SaaS platform. Rick has over 15 years of executive
+      management experience in the technology sector, holding president, CEO, general
+      manager, and board positions at several successful Internet security companies.
+      When Rick is not working on SharpSpring, he is busy with his second, and far
+      more complex start-up – his two sons. Sometimes, Rick still gets to play beach
+      volleyball, and occasionally, his wife politely laughs at his jokes.
+    </p>
+  </div>
+</section>
+
+<section id="tickets">
+  <div class="ui container">
+    <tito-widget event="gainesville-tech/startup-talks-rick-carlson"></tito-widget>
+  </div>
+</section>
