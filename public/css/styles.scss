@@ -326,6 +326,10 @@ header {
       background-image: url(../img/abhi-lokesh-background.jpg);
     }
 
+    &.rickcarlson {
+      background-image: url(../img/rick-carlson-profile-background.png);
+    }
+
     @media (max-width: $screen-phone-max) {
       height: initial !important;
       display: block;
@@ -428,9 +432,22 @@ footer {
 }
 
 #bio {
-  padding: 50px 0;
-  background-color: #ddd;
+  padding: 100px 0;
+  background-color: #fff;
   font-size: 1.2em;
+
+  h2 {
+    font-size: 4.5em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  h3 {
+    font-size: 2.0em;
+    text-transform: uppercase;
+    color: salmon;
+  }
 }
 
 #tickets {

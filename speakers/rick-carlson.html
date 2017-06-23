@@ -1,35 +1,47 @@
 ---
-speaker: rickcarlson
+speaker: rick_carlson
 tags: marketing technology
 js:
-  - //js.tito.io/v1
-css:
-  - https://css.tito.io/v1.1
+  - //cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js
+  - /public/js/speakers.js
 ---
 
-<header class="cover quarter speaker text">
-  Rick Carlson
+<header class="cover threequarters speaker rickcarlson">
+  <!--<div class="screen"></div>
+
+  <div class="video">
+    <div class="ui embed" data-source="youtube" data-id="BjXJiX77j_Y" data-icon="play" data-placeholder="/public/img/collin-austin.jpg"></div>
+  </div>
+  <script>
+    $(document).ready(function() {
+      $('.speaker .ui.embed').embed();
+    });
+  </script>-->
 </header>
 
 <section id="bio">
-  <div class="ui container">
-    <h2>Bio</h2>
+  <div class="ui container two column row relaxed grid">
+    <div class="six wide column lead">
+      <h2>Rick Carlson</h2>
+      <h3>SharpSpring</h3>
+      <p>
+        Founder and CEO
+      </p>
+    </div>
 
-    <p>
-      Rick is a founder and CEO of SharpSpring. He started with the goal of bringing
-      marketing analytics and automation tools to small and medium businesses on an
-      affordable and easy-to-use SaaS platform. Rick has over 15 years of executive
-      management experience in the technology sector, holding president, CEO, general
-      manager, and board positions at several successful Internet security companies.
-      When Rick is not working on SharpSpring, he is busy with his second, and far
-      more complex start-up – his two sons. Sometimes, Rick still gets to play beach
-      volleyball, and occasionally, his wife politely laughs at his jokes.
-    </p>
+    <div class="ten wide column">
+      <p>
+        Rick is a founder and CEO of SharpSpring. He started with the goal of bringing
+        marketing analytics and automation tools to small and medium businesses on an
+        affordable and easy-to-use SaaS platform. Rick has over 15 years of executive
+        management experience in the technology sector, holding president, CEO, general
+        manager, and board positions at several successful Internet security companies.
+        When Rick is not working on SharpSpring, he is busy with his second, and far
+        more complex start-up – his two sons. Sometimes, Rick still gets to play beach
+        volleyball, and occasionally, his wife politely laughs at his jokes.
+      </p>
+    </div>
   </div>
 </section>
 
-<section id="tickets">
-  <div class="ui container">
-    <tito-widget event="gainesville-tech/startup-talks-rick-carlson"></tito-widget>
-  </div>
-</section>
+{% include qanda.html %}

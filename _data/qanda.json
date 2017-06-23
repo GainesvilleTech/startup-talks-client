@@ -75,5 +75,30 @@
       "question": "What book is on your kindle or playing on audible right now?",
       "answer": "Entreleadership by Dave Ramsey"
     }
+  ],
+  "rick_carlson": [
+    {
+      "question": "Who are your primary influencers?",
+      "answer": "Business - Steve Blank, Steve Jobs, Malcolm Gladwell<br />
+      Personal - Sam Harris, Richard Dawkins, Steven Hawking"
+    },
+    {
+      "question": "How do you balance growing and strengthening your current business while
+      looking for opportunities to innovate?",
+      "answer": "Yes, always.  The process of building a business has as much to do with tearing down as it does building.  That means processes that worked today won’t necessarily work tomorrow, so they must be torn down and rebuilt to meet the current and future needs of the business.  The same is true of your product or service.  As a start-up you are obsessed with finding your initial “product/market fit.”  If you are both smart and lucky, you’ll find it.  Over time though, you come to the realization that you have to work to keep and/or improve that fit in order to stay competitive.  That comes in the form of innovation, and that means looking far enough into the future to react in time."
+    },
+    {
+      "question": "What would you say has been the defining moment for you as a
+      business leader to this point in your career?",
+      "answer": "I cannot point to one defining moment.  My time as a leader has been filled with highs and lows, times when I felt like I did a great job, and times when I felt like I have failed.  It is a continual process of failing and succeeding, reflecting and leaning. Someday, I hope to be really, really good at it."
+    },
+    {
+      "question": "What drives you to take on the challenges of running a business?",
+      "answer": "I have a short attention span, and need to be challenged. I was honestly scared at the idea of doing the same thing for 40 years.  Despite the stress, the challenges of running a business have me looking forward to work every day."
+    },
+    {
+      "question": "What book is on your kindle or playing on audible right now?",
+      "answer": "The End of Faith by Sam Harris."
+    }
   ]
 }
