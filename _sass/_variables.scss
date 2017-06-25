@@ -6,3 +6,13 @@ $screen-lg-desktop: 1200px !default;
 $screen-phone-max: ($screen-tablet - 1) !default;
 $screen-tablet-max: ($screen-desktop - 1) !default;
 $screen-desktop-max: ($screen-lg-desktop - 1) !default;
+
+.mobile {
+  &.only {
+    display: inherit;
+
+    @media (min-width: $screen-phone) {
+      display: none;
+    }
+  }
+}
