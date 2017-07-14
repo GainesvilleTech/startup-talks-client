@@ -330,6 +330,10 @@ header {
       background-image: url(../img/rick-carlson-profile-background.png);
     }
 
+    &.lindseytropf {
+      background-image: url(../img/lindsey-tropf-background.jpg);
+    }
+
     @media (max-width: $screen-phone-max) {
       height: initial !important;
       display: block;
