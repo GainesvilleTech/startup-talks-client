@@ -1,0 +1,23 @@
+.speakers {
+  &.upcoming {
+    display: none;
+
+    padding-top: 100px;
+    background-color: #ccc;
+
+    h2 {
+      font-size: 4.5em;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-size: 2.5em;
+      text-transform: uppercase;
+    }
+
+    .items {
+      padding-top: 50px;
+    }
+  }
+}
