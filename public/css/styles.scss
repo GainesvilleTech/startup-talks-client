@@ -230,7 +230,7 @@ nav {
 
 header {
   &.home {
-    background: transparent url("../img/background.png") no-repeat center center fixed;
+    background: transparent url("../img/geoff-wilson-background.jpg") no-repeat center center fixed;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -340,6 +340,10 @@ header {
 
     &.chrismarhefka {
       background-image: url(../img/chris-marhefka-background.jpg);
+    }
+    
+    &.geoffwilson {
+      background-image: url(../img/geoff-wilson-background.jpg);
     }
 
     @media (max-width: $screen-phone-max) {
