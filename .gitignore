@@ -10,3 +10,6 @@ _site
 
 # IDE settings
 .idea
+
+# OS Junk
+.DS_Store
