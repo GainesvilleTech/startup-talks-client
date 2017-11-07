@@ -124,5 +124,27 @@
       "question": "What book is on your kindle or playing on audible right now?",
       "answer": "I am definitely an Audible fan and listen to over 50 a year. Currently, I'm listening to \"Shoe Dog: A Memoir by the Creator of Nike\" By Phil Knight and \"Letters from a Self-Made Merchant to his Son\" By George Horace Lorimer"
     }
+  ],
+  "geoff_wilson": [
+    {
+      "question": "Who are your primary influencers?",
+      "answer": "My dad and some business leaders in Gainesville who I learned from (Joe Cirulli, Rich Blaser, Tim Broom, Nelson Logan, etc.) while part of the Vistage Group in Gainesville. I have also been influenced by certain authors with great business and startup advice -- in particular, Seth Godin, Patrick Lencioni, Eric Reis and Simon Sinek. And I love the story of Ben & Jerry's."
+    },
+    {
+      "question": "It has been said that you need to cultivate both the business you have and the business you will have or risk being out of business. How do you balance growing and strengthening your current business while looking for opportunities to innovate?",
+      "answer": "This is true. Your company has to have a mindset of growth and agility. I tell my team that we are a 20-year-old startup. That's the mentality we need to maintain. Working in teams helps, and having a flat org chart helps. You have to really empower your teams to take ownership, make decisions and be self-sufficient. The more layers of management and bureaucracy you have, the further away you will get from this."
+    },
+    {
+      "question": "What would you say has been the defining moment for you as a business leader to this point in your career?",
+      "answer": "I don't think there is ever one defining moment because growing a business is a journey. There is no end destination or single moment that will make or break you. To be successful, you need a lot of small steps forward that will add up to chart a successful path. You will always have steps backwards too, but if you have enough small steps forward you'll overcome the setbacks."
+    },
+    {
+      "question": "What drives you to take on the challenges of running a business?",
+      "answer": "The ability to create my own future and to create opportunities for others. Running a business is hard; you need to have an inner calling to achieve something great to overcome the setbacks."
+    },
+    {
+      "question": "What book is on your kindle or playing on audible right now?",
+      "answer": "I listen to podcasts more than I read books. I am really enjoying Malcolm Gladwell's Revisionist History right now. I also recommend Seth Godin's startup school, some of Tim Ferris' interviews, How I Built This, and the Y Combinator podcasts."
+    }
   ]
 }
